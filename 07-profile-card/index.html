@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>My profile Card</title>
+        <!--Connect CSS file-->
+        <link rel="stylesheet"href="style.CSS">
+
+        </head>
+
+        <body>
+            <div class="profile-card">
+                <div class="avatar">BE</div>
+            </div>
+
+            <h1>Beltine</h1>
+            <h3>Computer Science Student</h3>
+
+            <p>Hello! My name is Beltine. I am a computer science Student
+                intrested in web development, programming and technology.
+            </p>
+                <div class="details">
+                    <p><strong>school:</strong> Impact Polytechnic</p>
+                    <p><strong>Course</strong>Computer Science</p>
+                    <p><strong>Level:</strong>ND 2</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="contactMe()">Contact me</button>
+                    <button class="about-btn"onclick="showAbout()">
+                        About Me</button>
+                </div>
+     <!--About me section-->   
+     <div id="about-section"
+        class="about-section">
+    <p>My name is Beltine. I am computer science student 
+        who is passionate about technology
+         and software development.</p>
+         <button onclick="hideAbout()"
+         class="close-btn">
+        close
+        </button>
+    </div>  
+
+            </div>
+            <!--javascript-->
+            <script>
+                function
+                showAbout() {
+                    document.getElementById("about-section").style.display
+                    ="block";
+                }
+
+                function
+                hideAbout(){
+                    document.getElementById("about-section").style.display
+                    ="none";
+                }
+                 
+                function
+                contactMe(){
+                    alert("You can contact me through email or phone number.");
+                }
+            </script>
+    
+        </body>
+</html>
